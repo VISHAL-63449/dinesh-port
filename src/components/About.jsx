@@ -1,6 +1,7 @@
 import React from 'react';
 import { User, GraduationCap, MapPin, Mail, Phone, Code2 } from 'lucide-react';
 import { motion } from 'framer-motion';
+import profileImg from '../assets/my-image.png';
 
 export default function About() {
     return (
@@ -57,7 +58,7 @@ export default function About() {
                             <div className="relative z-10 space-y-6">
                                 <div className="flex items-center gap-4 border-b border-slate-200 pb-4">
                                     <div className="w-16 h-16 rounded-full bg-blue-100 flex items-center justify-center overflow-hidden border-2 border-white shadow-md">
-                                        <img src="/my-image.png" alt="Dinesh.M" className="w-full h-full object-cover" />
+                                        <img src={profileImg} alt="Dinesh.M" className="w-full h-full object-cover" />
                                     </div>
                                     <div>
                                         <p className="text-sm text-slate-500 font-medium">Name</p>

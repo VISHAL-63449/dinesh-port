@@ -1,6 +1,7 @@
 import React from 'react';
 import { Mail, Github, Linkedin, Phone, ArrowRight, Download, Terminal, Code, Database } from 'lucide-react';
 import { motion } from 'framer-motion';
+import profileImg from '../assets/my-image.png';
 
 export default function Hero() {
     return (
@@ -71,7 +72,7 @@ export default function Hero() {
                     {/* Main Card (Image) */}
                     <div className="absolute top-1/2 left-1/2 -transform-x-1/2 -transform-y-1/2 -translate-x-1/2 -translate-y-1/2 w-72 h-80 rounded-2xl p-2 shadow-2xl flex flex-col justify-between border border-white/50 bg-white/40 backdrop-blur-md z-10 group">
                         <div className="w-full h-full overflow-hidden rounded-xl">
-                            <img src="/my-image.png" alt="Dinesh.M" className="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700" />
+                            <img src={profileImg} alt="Dinesh.M" className="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700" />
                         </div>
                     </div>
 
